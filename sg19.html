@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var res = 0;
+        /*Similar al anterior, solo que esta vez cambiamos el operador para que me sume los numeros anteriores.
+        */
+        do {
+            var num = parseInt(prompt("Introduce un numero: "));
+            if (num != 0) {
+                res += num;//Este operador.
+            } 
+        } while (num != 0)
+        document.write(res)
+    </script>
+</body>
+</html>

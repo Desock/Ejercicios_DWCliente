@@ -7,18 +7,17 @@
 </head>
 <body>
     <script>
-
-        var num = prompt("Introduce un numero: ");
-        var contador = 0;
-        
-        while (num > 0) {
-            contador++
-                if (num < 0) {
-                alert("Numero negativo");
-            }
-        }
-        alert(contador);
-
+        /*Con este do/while lo que hacemos es entrar al bucle tantas veces como numeros positivos introduzcamos
+        incrementando el contador y mostrandolo posteriormente.
+        */
+        var contador = 0;//La variable contador se queda fuera para poder incrementarla correctamente.
+        do {
+            var num = prompt("Introduce un numero: ");
+            if (num > 0) {
+                contador++;
+            } 
+        } while (num > 0)
+        document.write(contador)
     </script>
 </body>
 </html>
