@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Parecido a los 2 anteriores cambiando las condiciones de dentro de los if
+        */
+        do {
+            var num = prompt("Introduce un numero: ");
+            if (num % 2 == 0 && num != 0) { //El 0 me lo contaba como par asi que añadí esta condicion.
+                alert("Numero par");
+            } else if (num % 2 != 0 ) {
+                alert("Numero impar")
+            } else {
+                alert("El numero es 0")
+            }
+        } while (num != 0)
+        
+
+    </script>
+</body>
+</html>

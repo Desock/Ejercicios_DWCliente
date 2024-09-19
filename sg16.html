@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Muy similar al ejercicio 15 salvo que añadiendo una condicion mas para distinguir los numeros
+        positivos y los negativos y salir del do/while cuando el numero sea 0
+        */
+        do {
+            var num = prompt("Introduce un numero: ");
+            if (num > 0) {
+                alert("Numero positivo");
+            } else if (num < 0 ) {
+                alert("Numero negativo")
+            } else {
+                alert("El numero es 0")
+            }
+        } while (num != 0)
+        
+
+    </script>
+</body>
+</html>
