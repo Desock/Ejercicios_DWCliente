@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Ejercicio con Arrays</title>
+  </head>
+  <body>
+    <h1>Tabla de libros</h1>
+    <script>
+      var libros = [
+        [
+          "1",
+          "Access para Windows",
+          "Charles Siegel",
+          "Anaya",
+          "Informática",
+          "84-7614-759-7",
+          "450",
+          "46,67",
+        ],
+        [
+          "2",
+          "Salud",
+          "Eduardo Almansa",
+          "Deusto",
+          "Medicina",
+          "24-3547-590-1",
+          "153",
+          "23,18",
+        ],
+        [
+          "3",
+          "Redes de computadores",
+          "Luis Carcel",
+          "Paraninfo",
+          "Informatica",
+          "47-8829-435-7",
+          "215",
+          "32,86",
+        ],
+      ];
+
+      var cod_busqueda = prompt("Introduce el codigo del libro: ");
+      var estaElLibro = false;
+
+      for (var i = 0; i < libros.length; i++) {
+        if (libros[i][0] === cod_busqueda) {
+          estaElLibro = true;
+          document.write(
+            "<table><th>Código:</th><td> " + libros[i][0] + "</td></table>"
+          );
+          document.write(
+            "<table><th>Título:</th><td> " + libros[i][1] + "</td></table>"
+          );
+          document.write(
+            "<table><th>Autor:</th><td> " + libros[i][2] + "</td></table>"
+          );
+          document.write(
+            "<table><th>Editorial:</th><td> " + libros[i][3] + "</td></table>"
+          );
+          document.write(
+            "<table><th>Tema:</th><td> " + libros[i][4] + "</td></table>"
+          );
+          document.write(
+            "<table><th>ISBN:</th><td> " + libros[i][5] + "</td></table>"
+          );
+          document.write(
+            "<table><th>Páginas:</th><td> " + libros[i][6] + "</td></table>"
+          );
+          document.write(
+            "<table><th>Precio:</th><td> " + libros[i][7] + "</td></table>"
+          );
+        }
+      }
+      if (!estaElLibro) {
+        document.write("<p>El libro no está registrado.</p>");
+      }
+    </script>
+  </body>
+</html>
